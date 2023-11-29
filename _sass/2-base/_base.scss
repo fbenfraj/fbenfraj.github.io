@@ -4,7 +4,16 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -12,7 +21,6 @@ body {
   background-color: var(--background-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
 
   @media only screen and (max-width: $mobile) {
     font-size: 18px;
@@ -246,4 +254,8 @@ table td {
 
 .lightense-backdrop {
   background-color: var(--background-alt-color) !important;
+}
+
+.content {
+  flex: 1;
 }
