@@ -18,8 +18,6 @@ menu__settings:
       url: "/about/"
     - title: "Contact"
       url: "/contact/"
-    # - title: "Elements"
-    #   url: "/elements/"
 
 #-------------------------------
 hero:
@@ -110,4 +108,4 @@ disqus-identifier: anvodstudio-demo # add your shortname for Disqus Comment. For
 
 #-------------------------------
 # Google Analytics
-google-analytics: # Add your GA Tracking Id
+google-analytics: G-ZPZCER5NRB
