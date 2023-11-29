@@ -219,6 +219,22 @@ table td {
   }
 }
 
+#book-call-btn {
+  float: right;
+  margin-top: 16px;
+  padding: 10px 20px;
+  font-size: 25px;
+
+  &:hover {
+    color: var(--white);
+  }
+
+  @media only screen and (max-width: $mobile) {
+    width: auto;
+    font-size: 16px;
+  }
+}
+
 .lazy {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
