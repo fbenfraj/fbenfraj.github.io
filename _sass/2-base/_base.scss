@@ -217,21 +217,24 @@ table td {
   color: var(--heading-font-color);
   background: var(--background-alt-color);
 
-  &--primary {
-    color: var(--white);
-    background-color: var(--button-background-color);
+  &:hover {
+    color: var(--button-color);
+    background: var(--button-background-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
-    &:hover {
-      background: var(--button-background-hover);
-    }
+  &--primary {
+    color: var(--dark);
+    background-color: var(--button-background-color);
   }
 }
 
 #book-call-btn {
   float: right;
   margin-top: 16px;
-  padding: 10px 20px;
-  font-size: 25px;
+  padding: 16px 24px;
+  font-size: 24px;
 
   &:hover {
     color: var(--white);
