@@ -246,7 +246,7 @@ table td {
 }
 
 #book-call-btn-home {
-  @extend #book-call-btn;
+  @extend .book-call-btn;
   float: right;
 }
 
