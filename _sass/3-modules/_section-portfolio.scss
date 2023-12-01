@@ -46,7 +46,7 @@
     will-change: transform;
     transition: all 0.15s ease;
   }
-  
+
   &:before {
     left: 0;
     transform: translateX(-9px);
@@ -71,7 +71,7 @@
       left: 0;
       transform: translateX(-15px);
     }
-    
+
     &:after {
       right: 0;
       transform: translateX(15px);
@@ -80,7 +80,6 @@
 }
 
 .view-list {
-
   .portfolio__gallery {
     .col {
       width: 100%;
@@ -92,7 +91,7 @@
 
     @media only screen and (max-width: $tablet) {
       .portfolio__link {
-         padding-top: 87%;
+        padding-top: 87%;
       }
     }
   }
@@ -115,14 +114,13 @@
   transition: none;
 
   &:hover {
-
     &::after {
       opacity: 1;
       visibility: visible;
     }
 
     .portfolio__icon {
-      transform: translate(-50%, -50%) scale(1,1);
+      transform: translate(-50%, -50%) scale(1, 1);
       opacity: 1;
       visibility: visible;
     }
@@ -140,7 +138,7 @@
     opacity: 0;
     visibility: hidden;
     background: rgba(0, 0, 0, 0.1);
-    transition: all .35s ease;
+    transition: all 0.35s ease;
   }
 }
 
@@ -149,7 +147,7 @@
   z-index: 1;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(.3,.3);
+  transform: translate(-50%, -50%) scale(0.3, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +159,8 @@
   background: var(--border-color-alt);
   opacity: 0;
   visibility: hidden;
-  transition: all .35s ease, transform .35s cubic-bezier(.175,.885,.32,1.275) 0s;
+  transition: all 0.35s ease,
+    transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 }
 
 .portfolio__image {
@@ -172,5 +171,37 @@
   height: 100%;
   object-fit: cover;
   border-radius: 16px;
-  box-shadow: 0px 103px 80px rgba(27, 22, 50, 0.07), 0px 37.6px 29.2px rgba(27, 22, 50, 0.0483), 0px 18.25px 14.18px rgba(27, 22, 50, 0.0389), 0px 8.95px 6.95px rgba(27, 22, 50, 0.0311), 0px 3.54px 2.75px rgba(27, 22, 50, 0.0217);
+  box-shadow: 0px 103px 80px rgba(27, 22, 50, 0.07),
+    0px 37.6px 29.2px rgba(27, 22, 50, 0.0483),
+    0px 18.25px 14.18px rgba(27, 22, 50, 0.0389),
+    0px 8.95px 6.95px rgba(27, 22, 50, 0.0311),
+    0px 3.54px 2.75px rgba(27, 22, 50, 0.0217);
+}
+
+.portfolio__item-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--heading-font-color);
+}
+
+.portfolio__item-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.portfolio__tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 3px 6px;
+  background-color: var(--background-color);
+  font-size: 12px;
+  color: var(--heading-font-color);
 }

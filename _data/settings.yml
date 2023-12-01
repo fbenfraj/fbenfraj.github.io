@@ -29,41 +29,25 @@ hero:
 portfolio:
   portfolio__title: Portfolio
   portfolio__gallery:
-    - image: /images/gallery-01.jpg
-      title: Samantha Gades
-      description: Brown photo frame beside wall <a href="https://unsplash.com/photos/8Od75hgzb9Y">Unsplash</a>
+    - image: /images/gateway-cover.jpg
+      title: Odyssey (formerly Gateway)
+      description: Brown photo frame beside wall <a href="https://www.mygateway.xyz/">mygateway.xyz</a>
+      tags: ["React", "NodeJS", "Blockchain (Solidity)"]
 
-    - image: /images/gallery-02.jpg
-      title: Paula Vermeulen
-      description: Gray mountain covered by mountain <a href="https://unsplash.com/photos/_f2m3mEkaaU">Unsplash</a>
+    # - image: /images/gallery-02.jpg
+    #   title: Raisponse
+    #   description: Brown photo frame beside wall <a href="https://www.mygateway.xyz/">mygateway.xyz</a>
+    # - image: /images/gallery-03.jpg
+    #   title: Hotonome
+    #   description: Brown photo frame beside wall <a href="https://www.mygateway.xyz/">mygateway.xyz</a>
 
-    - image: /images/gallery-03.jpg
-      title: Bench Accounting
-      description: White wooden table near brown chair <a href="https://unsplash.com/photos/nvzvOPQW0gc">Unsplash</a>
-
-    - image: /images/gallery-04.jpg
-      title: Nord Wood
-      description: White ceramic mug <a href="https://unsplash.com/photos/nDd3dIkkOLo">Unsplash</a>
-
-    - image: /images/gallery-05.jpg
-      title: Luca Bravo
-      description: White ribs in a facade against a white sky <a href="https://unsplash.com/photos/alS7ewQ41M8">Unsplash</a>
-
-    - image: /images/gallery-06.jpg
-      title: Isaac Benhesed
-      description: Minimalist black coffee <a href="https://unsplash.com/photos/onLbXleIkds">Unsplash</a>
-
-    - image: /images/gallery-07.jpg
-      title: Water Journal
-      description: Water Journal is a bi-annual publication exploring the beauty and complexity of all things water <a href="https://unsplash.com/photos/EbuaKnSm8Zw">Unsplash</a>
-
-    - image: /images/gallery-08.jpg
-      title: Luca Bravo
-      description: Worms eye view of city buildings <a href="https://unsplash.com/photos/a6x7YPiNxwI">Unsplash</a>
-
-    - image: /images/gallery-09.jpg
-      title: Books and Laptop
-      description: Silver laptop computer with two books on the top <a href="https://unsplash.com/photos/fFIAKABImf4">Unsplash</a>
+#-------------------------------
+# Portfolio Tags Settings
+tag_icons:
+  React: "logo-react"
+  NodeJS: "logo-nodejs"
+  "Blockchain (Solidity)": "logo-bitcoin"
+  "Tech Leadership": "compass-outline"
 
 #-------------------------------
 # Subscribe Settings
@@ -77,13 +61,13 @@ mailchimp:
 # Footer Settings
 social:
   - {
-      icon: "ion-logo-linkedin",
+      icon: "logo-linkedin",
       color: "#55acee",
       label: Linkedin,
       link: "https://www.linkedin.com/in/farouk-benfraj/",
     }
   - {
-      icon: "ion-logo-github",
+      icon: "logo-github",
       color: "#24292e",
       label: Github,
       link: "https://github.com/fbenfraj",

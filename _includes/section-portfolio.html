@@ -1,5 +1,5 @@
 <!-- begin portfolio -->
-<!-- <section class="section portfolio">
+<section class="section portfolio">
 
   <div class="container">
     <div class="row">
@@ -27,9 +27,17 @@
         <div class="col col-4 col-d-6 col-t-12">
           <div class="portfolio__item">
             <a href="{% if photo.video %}{{photo.video}}{% else %}{{photo.image}}{% endif %}" class="portfolio__link glightbox" {% if photo.video %}aria-label="Video"{% else %}data-glightbox='title: {{photo.title}}; description: {{photo.description}}; descPosition: bottom;'{% endif %}>
-              <span class="portfolio__icon"><i class="ion ion-ios-eye"></i></span>
+              <span class="portfolio__icon"><ion-icon name="eye-outline"></ion-icon></span>
               <img data-src="{{photo.image}}" class="portfolio__image lazy" alt="{{photo.title}}">
             </a>
+            <div class="portfolio__item-title">{{ photo.title }}</div>
+            <div class="portfolio__item-tags">
+            {% for tag in photo.tags %}
+              <span class="portfolio__tag">
+                <ion-icon name="{{ site.data.settings.tag_icons[tag] }}"></ion-icon> {{ tag }}
+              </span>
+            {% endfor %}
+            </div>
            </div>
         </div>
         {% endfor %}
@@ -37,5 +45,5 @@
     </div>
   </div>
 
-</section> -->
+</section>
 <!-- end portfolio -->
