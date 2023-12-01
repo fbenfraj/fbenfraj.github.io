@@ -230,11 +230,10 @@ table td {
   }
 }
 
-#book-call-btn {
-  float: right;
+.book-call-btn {
   margin-top: 16px;
   padding: 16px 24px;
-  font-size: 24px;
+  font-size: 16px;
 
   &:hover {
     color: var(--white);
@@ -244,6 +243,11 @@ table td {
     width: auto;
     font-size: 16px;
   }
+}
+
+#book-call-btn-home {
+  @extend #book-call-btn;
+  float: right;
 }
 
 .lazy {
